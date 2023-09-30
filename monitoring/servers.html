@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/server.css">
+    <link rel="shortcut icon" href="../ico/1.ico" type="image/x-icon">
+    <title>Статус серверов</title>
+</head>
+<body>
+    <header>
+        <h1>Статус серверов</h1>
+    </header>
+    <main>
+        <section class="server-status">
+            <div class="server" onclick="alert('Сервер выключен. Попробуйте позже.')">
+                <h2>Сервер хранилища загрузки</h2>
+                <p class="status offline">Выключен</p>
+            </div>
+            <div class="server" onclick="alert('Перебои в работе. Не рекомендуется играть на серверах.')">
+                <h2>Серверы Майнкрафт</h2>
+                <p class="status issues">Перебои в работе</p>
+            </div>
+            <div class="server">
+                <h2>Сайт игры</h2>
+                <p class="status online">Включено</p>
+                <a class="site-link" href="../index.html" target="_blank"></a>
+            </div>
+            <div class="server">
+                <h2>Мониторинг</h2>
+                <p class="status online">Включен</p>
+                <a class="site-link" href="mineservers.html" target="_blank"></a>
+            </div>
+            <div class="server" onclick="alert('Поддержка (Discord): sk1pppy')">
+                <h2>Поддержка</h2>
+                <p class="status online">Включено</p>
+            </div>
+            <div class="server">
+                <h2>Архив</h2>
+                <p class="status unknown">Неизвестно</p>
+                <a class="site-link" href="../archive/oldnews2010.html" target="_blank"></a>
+            </div>
+        </section>
+        <div class="server">
+            <h2 class="ot">Нажмите на блок, чтобы перейти на сайт, а также убедится в онлайне сервера.</h2>
+            
+            <h2>Последнее обновление статуса: <h2 id="time"></h2></h2>
+            <script src="../js/time.js"></script>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Контактная информация (Discord): sk1pppy</p>
+        </div>
+    </footer>
+
+    <style>
+
+    </style>
+    <script>
+    // Получаем все элементы с классом "server"
+    const serverBlocks = document.querySelectorAll('.server');
+
+    // Добавляем обработчик события для каждого блока
+    serverBlocks.forEach((block) => {
+        block.addEventListener('click', () => {
+            // Находим ссылку внутри блока
+            const link = block.querySelector('.site-link');
+
+            // Проверяем, есть ли ссылка
+            if (link) {
+                const siteURL = link.getAttribute('href');
+                
+                // Открываем ссылку в новом окне
+                window.open(siteURL, '_blank');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

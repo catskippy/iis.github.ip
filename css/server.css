@@ -1,0 +1,193 @@
+        /* Нормализация стилей для обнуления стандартных браузерных стилей */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        /* Общие стили */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        header h1 {
+            font-size: 28px;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        /* Стили для блока серверов */
+        .server-status {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .server {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: calc(50% - 20px); /* Чтобы учесть отступ между блоками */
+            margin-bottom: 20px;
+            position: relative; /* Добавляем для позиционирования кружков */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляем тень блокам */
+            transition: transform 0.3s ease;
+        }
+        
+        .server:hover {
+            transform: translateY(-5px); /* Поднимаем блок при наведении */
+        }
+        
+        .server h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+        
+        .status {
+            font-size: 18px;
+            display: flex;
+            align-items: center; /* Выравнивание текста и кружка по вертикали */
+        }
+        
+        /* Стили для кружков */
+        .status::before {
+            content: ''; /* Добавляем пустой контент для псевдоэлемента */
+            width: 20px;
+            height: 20px;
+            border-radius: 50%; /* Превращаем в круг */
+            margin-right: 10px; /* Отступ между кружком и текстом */
+            flex-shrink: 0; /* Запрещаем уменьшение размера кружка */
+        }
+        
+        /* Цвета для разных статусов */
+        .offline::before {
+            background-color: #ff4d4d; /* Красный цвет для "Выключено" */
+        }
+        
+        .issues::before {
+            background-color: #ff9900; /* Оранжевый цвет для "Перебои в работе" */
+        }
+        
+        .online::before {
+            background-color: #33cc33; /* Зелёный цвет для "Включено" */
+        }
+        
+        .unknown::before {
+            background-color: #999; /* Серый цвет для "Неизвестно" */
+        }
+        
+        /* Стили для футера */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        
+        /* Стили для блока серверов */
+        .server-status {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .server {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 48%;
+            margin-bottom: 20px;
+            position: relative; /* Добавляем для позиционирования кружков */
+        }
+        
+        .server h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+        
+        .status {
+            font-size: 18px;
+            display: flex;
+            align-items: center; /* Выравнивание текста и кружка по вертикали */
+        }
+        
+        /* Стили для кружков */
+        .status::before {
+            content: ''; /* Добавляем пустой контент для псевдоэлемента */
+            width: 20px;
+            height: 20px;
+            border-radius: 50%; /* Превращаем в круг */
+            margin-right: 10px; /* Отступ между кружком и текстом */
+        }
+        
+        /* Цвета для разных статусов */
+        .offline::before {
+            background-color: red;
+        }
+        
+        .issues::before {
+            background-color: orange;
+        }
+        
+        .online::before {
+            background-color: green;
+        }
+        
+        .unknown::before {
+            background-color: gray;
+        }
+        
+        /* Стили для футера */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        /* Стили для блока контактной информации в футере */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .contact-info {
+            margin-top: 1px;
+            padding: 10px;
+        }
+        
+        .contact-info p {
+            font-size: 16px;
+        }
+
+        .ot {
+            margin-bottom: 20px;
+        }

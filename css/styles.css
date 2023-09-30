@@ -1,0 +1,283 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Выравнивание элементов по центру */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    height: 40px; /* Высота навигационного меню */
+}
+
+nav il {
+    margin: 0 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Цвет текста ссылок */
+    font-size: 16px; /* Размер текста ссылок */
+    font-weight: bold; /* Жирный шрифт для ссылок */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+/* CSS для навигационного меню */
+nav {
+    background-color: #333; /* Цвет фона навигационного меню */
+    padding: 10px 0; /* Внутренние отступы сверху и снизу */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+ul {
+    list-style-type: none; /* Убираем стандартный маркер списка */
+    padding: 0; /* Убираем внутренние отступы списка */
+}
+
+li {
+    display: inline-block; /* Располагаем элементы в строку */
+    margin-right: 20px; /* Отступ между элементами */
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #fff; /* Цвет текста ссылок */
+    font-weight: bold; /* Жирный текст */
+    font-size: 16px; /* Размер шрифта */
+    transition: color 0.3s; /* Плавное изменение цвета текста при наведении */
+}
+
+a:hover {
+    color: #ff6600; /* Цвет текста при наведении */
+}
+
+/* Стили для новости об обновлении Alpha205 */
+.news-article {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    width: 80%;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.news-article h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center; /* Выравнивание заголовка по центру */
+}
+
+.news-article p {
+    color: #666;
+}
+
+.news-date {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px; /* Уменьшаем размер шрифта на 2 */
+    color: #888;
+}
+
+/* Стили для разделения абзацев в новости */
+.parali {
+    margin-bottom: 20px; /* Отступ между абзацами */
+}
+
+.lired {
+    color: red;
+}
+
+.aplus {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #000; /* Цвет текста ссылок */
+    font-weight: bold; /* Жирный текст */
+    font-size: 18px; /* Размер шрифта */
+    transition: color 0.3s; /* Плавное изменение цвета текста при наведении */
+}
+
+button:hover {
+    background-color: #0056b3; /* Измененный цвет фона при наведении */
+}
+
+button#contact-button {
+    background-color: #007BFF; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    border: none; /* Убираем границу кнопки */
+    border-radius: 5px; /* Закругление углов кнопки */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+.downloads {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.downloads h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.download-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.download-option {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.download-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.download-option h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.download-link {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.download-link:hover {
+    background-color: #555;
+}
+
+            /* CSS стили для раздела "Новости" */
+            .news {
+                background-color: #f9f9f9;
+                padding: 40px 0;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Центрирование по горизонтали */
+            }
+
+            .news h2 {
+                font-size: 36px;
+                margin-bottom: 20px;
+                color: #333;
+            }
+
+            .news-article {
+                background-color: #fff;
+                border: 1px solid #e5e5e5;
+                border-radius: 10px;
+                padding: 30px;
+                margin: 10px;
+                width: 80%;
+                text-align: left;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                position: relative; /* Добавляем для позиционирования даты */
+            }
+
+            .news-article:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            }
+
+            .news-article h3 {
+                font-size: 24px;
+                margin-bottom: 15px;
+                color: #333;
+                text-align: center; /* Центрирование заголовка */
+            }
+
+            .news-article p {
+                color: #666;
+            }
+
+            .news-date {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                font-size: 12px; /* Уменьшаем размер шрифта на 2 */
+                color: #888;
+            }

@@ -1,0 +1,90 @@
+/* Стили для фона и контейнера */
+body {
+    background-image: url('../img/dirt.png');
+    background-repeat: repeat; /* Повторять фон */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный фон контейнера */
+}
+
+/* Стили для логотипа и заголовка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный фон заголовка */
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+}
+
+.logo-text {
+    font-size: 70px;
+    color: #333;
+    margin: 1;
+}
+
+/* Стили для новостей */
+
+.news {
+    margin-top: 40px; /* Увыеличьте верхний отступ для увеличения расстояния */
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.article {
+    margin: 20px 0;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #888;
+}
+
+.otdel {
+    margin-bottom: 20px;
+}
+
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 50px; /* Размер иконки */
+    height: 50px;
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+.header .logo-text {
+    font-size: 24px; /* Размер текста */
+    font-weight: bold; /* Жирный шрифт */
+}

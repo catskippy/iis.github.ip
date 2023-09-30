@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.server {
+    width: 30%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.server h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.server .status {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.server .status.online {
+    background-color: #4CAF50;
+}
+
+.server .status.offline {
+    background-color: #F44336;
+}
+
+.server-details {
+    width: 55%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.server-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.server-details img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.redtext {
+    color: red;
+}
+/* Стили для контейнера */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет блокам переноситься на следующую строку */
+}
+
+/* Стили для блоков серверов */
+.server {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    flex: 1;
+}
+
+.server:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для подробной информации */
+.server-details {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-left: 20px;
+    flex-grow: 2; /* Увеличиваем ширину блока с подробной информацией */
+    animation: slideIn 0.5s ease; /* Анимация для появления */
+}
+
+/* Стили для кружка статуса */
+.status-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.gray {
+    background-color: gray;
+}
+
+/* Стили для навигационного меню */
+ul.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Добавляем горизонтальное расположение */
+    background-color: #333; /* Цвет фона навигационного меню */
+    color: #fff; /* Цвет текста в навигационном меню */
+    justify-content: space-between; /* Равномерное распределение элементов по ширине */
+    align-items: center; /* Выравнивание элементов по вертикали */
+    padding: 10px 20px; /* Внутренние отступы */
+}
+
+ul.nav-menu li {
+    margin-right: 20px;
+}
+
+ul.nav-menu li a {
+    text-decoration: none;
+    color: #fff; /* Цвет ссылок в навигационном меню */
+}
+
+ul.nav-menu li a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Добавляем стили для надписи "Мониторинг серверов" в навигационном меню */
+.nav-menu-title {
+    font-weight: bold;
+}
+
+/* Анимация для появления блока с подробной информацией */
+@keyframes slideIn {
+    from {
+        margin-left: 0;
+        opacity: 0;
+    }
+    to {
+        margin-left: 20px;
+        opacity: 1;
+    }
+}

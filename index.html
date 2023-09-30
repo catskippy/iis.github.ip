@@ -2,33 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft Alpha 205</title>
-    <link rel="stylesheet" href="css/css.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet"> 
-    <link rel="shortcut icon" href="ico/1.ico" type="image/x-icon">
-    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="/ico/1.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1 class="h1">Minecraft Alpha 205</h1>
-        <p class="p">Minecraft Alpha 205 hidden version of Minecraft! It was accidentally found on an old hard drive. Download and enjoy the game!</p>
-        <br>
-       
-        <center><a href="files/alpha205.exe"><button class="but">Download</button></Download></a></center>
-        <center><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button class="but">New update</button></a></center>
-        <center><h2>Discord: sk1pppy</h2></center>
-    
-    </div>
+    <header>
+        <h1>Minecraft Alpha 205</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">      Главная</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#downloads">Скачать</a></li>
+            </ul>
+        </nav>
+    </header>
+<div id="home" class="minecraft-version-description">
+    <style>
+    .minecraft-version-description {
+        background-color: #f9f9f9;
+        background-image: url('img/2010-05-08-03-12-20.jpg'); /* Путь к вашей картинке */
+        background-size: cover; /* Масштабирование фоновой картинки для заполнения всего блока */
+        background-repeat: no-repeat; /* Отключаем повторение картинки */
+        background-position: center; /* Выравнивание картинки по центру */
+        padding: 40px; /* Увеличиваем отступы, чтобы увеличить блок */
+        text-align: center;
+        border-radius: 10px;
+        margin: 10px; /* Уменьшаем отступы, чтобы сделать блок поменьше */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        width: 50%; /* Ширина блока установлена на 50% экрана */
+        height: 50vh; /* Высота блока установлена на 50% высоты экрана */
+        margin-left: auto; /* Выравниваем блок по центру горизонтально */
+        margin-right: auto; /* Выравниваем блок по центру горизонтально */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .minecraft-version-description p {
+        font-size: 24px; /* Уменьшаем размер шрифта */
+        color: #fff; /* Текст становится белым */
+    }
+
+    .minecraft-version-description:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+    <p>Погрузитесь в мистическую версию Майнкрафта, где загадочные артефакты и магические заклинания встречаются на каждом шагу. Alpha205 - это путь в неизведанные миры, где вы сможете исследовать древние таинства и прокладывать свой путь сквозь магические приключения. Подготовьтесь к встрече с невиданными существами и станьте волшебником своего мира в Alpha205!</p>
+</div>
+
+    <main>
+        <!-- Раздел "Новости" -->
+        <section id="news" class="news">
+
+            <h2>Новости</h2>
+            <div class="news-article">
+                <h3>Новое обновление Alpha205</h3>
+                <p class="news-date">Дата: 28 сентября 2023</p>
+                <li class="parali">Мы рады представить вам новое обновление Alpha205 Майнкрафта с множеством улучшений и новых возможностей. Узнайте, скачав это обновление. Мы возращаемся, скоро будет множество улучшений, как это было раньше!</li>
+                <li>Для вас, мы написали новый сайт, где вы можете всегда задавать вопросы, предложения, присылать баги и тому подобное!</li>
+                <li class="parali">Наше дополнение к Майнкрафту всегда будет актуален, где бы вы не были.</li>
+                <li class="parali">Мы оставили только одну важную новость, которая ниже, а другие новости перенесли <a href="archive/oldnews2010.html" class="aplus">суда</a>.</li>
+            </div>
+           <!-- Новость об обновлении Alpha205 -->
+            <article class="news-article">
+                <h3>Новое обновление Alpha205: "Исправление глобальных багов"</h3>
+                <p class="news-date">Дата: 11 сентября 2010</p>
+                <div class="paragraph">
+                    <p>В новом обновлении Alpha205 мы сосредоточились на улучшении общей стабильности и плавности игрового процесса. Это обновление приносит с собой огромное количество исправлений, которые решают разнообразные проблемы и баги, улучшая общий опыт игры.</p>
+                </div>
+                <div class="paragraph">
+                    <p>Что включено в обновление:</p>
+                    <ul>
+                        <li class="parali"> - Глобальные исправления: Мы внимательно прислушались к сообществу и устранили широкий спектр багов и неполадок, которые влияли на игровой процесс. Теперь игра работает более стабильно и плавно, минимизируя возможные сбои.</li>
+                        <li class="parali"> - Улучшенная производительность: Мы оптимизировали существ, код игры и ресурсы для улучшения производительности. Вы почувствуете, как игра работает быстрее и более отзывчиво.</li>
+                        <li class="parali"> - Корректировка геймплея: Мы внесли некоторые коррекции в геймплей, чтобы сделать его более увлекательным. Играйте с уверенностью, зная, что баги и проблемы больше не будут мешать вашему приключению, ведь удалили всех существ, которые пытались вызвать сбой игры.</li>
+                        <li> - Безопасность и стабильность серверов: Если вы играете на серверах, это обновление также включает в себя меры безопасности и улучшенную стабильность серверов, чтобы обеспечить бесперебойный онлайн-опыт. Но в данный момент сервера отключены, для загрузки обновлений, так что <li class="lired">НЕ ПЫТАЙТЕСЬ В НИ КОЕМ СОЗДАВАТЬ, ЗАХОДИТЬ НА СЕРВЕРА!!!</li></li>
+                    </ul>
+                </div>
+                <div class="paragraph">
+                    <p>С обновлением Alpha205: "Исправление глобальных багов", вы сможете наслаждаться Майнкрафтом без лишних перебоев и вмешательств в игровой процесс, с уверенностью в стабильной работе игры. Скачайте это обновление и погрузитесь в мир приключений и творчества!</p>
+                </div>
+            </article>
+
+        </section>
+        <!-- Конец раздела "Новости" -->
+
+        <!-- Раздел "Скачать" -->
+        <section id="downloads" class="downloads">
+            <h2>Скачать</h2>
+            <div class="download-options">
+                <div class="download-option">
+                    <h3>Windows</h3>
+                    <a href="download/windows.zip" class="download-link">Скачать для Windows</a>
+                </div>
+                <div class="download-option">
+                    <h3>macOS</h3>
+                    <a href="error.html" class="download-link">Скачать для macOS</a>
+                </div>
+                <div class="download-option">
+                    <h3>Linux</h3>
+                    <a href="error.html" class="download-link">Скачать для Linux</a>
+                </div>
+            </div>
+        </section>
+        <!-- Конец раздела "Скачать" -->
+        
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="monitoring/servers.html">Мониторинг</a>
+        </div>
+        <div class="contact-info">
+            <p>Контактная информация (Discord): sk1pppy</p>
+        </div>
+    </footer>
 </body>
 </html>
