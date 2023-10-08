@@ -116,7 +116,7 @@
             </div>
         </section>
         <!-- Конец раздела "Скачать" -->
-        
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld8oYYoAAAAAC5-jjux_l2fJcoFttEoHckBJH5X"></script>
     </main>
     <footer>
         <div class="social-media">
@@ -126,5 +126,18 @@
             <p>Контактная информация (Discord): sk1pppy</p>
         </div>
     </footer>
+<script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6Ld8oYYoAAAAAC5-jjux_l2fJcoFttEoHckBJH5X', {action: 'LOGIN'});
+        // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+        // reCAPTCHA Enterprise to the end user's browser.
+        // This token must be validated by creating an assessment.
+        // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+      });
+    }
+</script>
 </body>
 </html>
+
